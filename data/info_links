@@ -1,0 +1,4 @@
+pip install kaggle
+kaggle datasets download -d uciml/german-credit
+kaggle datasets download -d kabure/german-credit-data-with-risk
+unzip german-credit.zip 
