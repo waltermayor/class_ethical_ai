@@ -25,6 +25,9 @@ services:
       spark://spark-master:7077
     environment:
       SPARK_EXTRA_CLASSPATH: "/opt/extra-jars/*"
+      SPARK_WORKER_CORES: "4"
+      SPARK_WORKER_MEMORY: "10g"
+      SPARK_DAEMON_MEMORY: "1g"
     volumes:
       - ./data:/workspace/data
       - ./jars:/opt/extra-jars
@@ -40,6 +43,9 @@ services:
       spark://spark-master:7077
     environment:
       SPARK_EXTRA_CLASSPATH: "/opt/extra-jars/*"
+      SPARK_WORKER_CORES: "4"
+      SPARK_WORKER_MEMORY: "10g"
+      SPARK_DAEMON_MEMORY: "1g"
     volumes:
       - ./data:/workspace/data
       - ./jars:/opt/extra-jars
