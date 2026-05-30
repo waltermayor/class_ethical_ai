@@ -1,3 +1,10 @@
 data/*.csv
 data/*.zip
 jars/*.jar
+.venv/
+__pycache__/
+notebooks/.ipynb_checkpoints
+notebooks/.spark-tmp/
+notebooks/wandb/
+logs/
+.env
